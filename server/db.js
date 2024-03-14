@@ -85,7 +85,7 @@ const authenticate = async ({ username, password }) => {
 };
 
 const findUserWithToken = async (id) => {
-  let id;
+  
   try {
     const payload = await jwt.verify(token, JWT);
     id = payload.id;
